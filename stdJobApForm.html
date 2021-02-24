@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Auther" content="Amica Sharma">
+        <title>amica-project</title>
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="mystyle.css">
+           </head>
+    <header>
+        <a href="http://ccse.kennesaw.edu/it" target="blank">
+        <img src="img/ksu_logo.png" alt="KSU Logo"></a>
+        <h1>Center for Applied Research in Information Technology</h1>
+    </header>
+
+<body>
+    <!--Nevigation bar-->    
+    <div class="navbar">
+        <a href="index.html">Home</a> 
+		<a href="faculty.html">Faculty</a> 
+		<a href="resources.html">Resources</a> 
+		<a href="studentjob.html">Internships</a>
+    </div>
+   <!--main content begains-->
+   <h1>Welcome to Amica's CARIT Web Page</h1>
+   <hr>
+<div id="contents">
+<h2> KSU Student Assistant Job Application Form </h2> 
+<p>* Indicates Required Field</p>
+<h3> Personal Information</h3>
+<form action="./StdJobApSubForm.php" method="POST">
+ First Name : *<input type="text" name="firstname" required>   Last Name: *<input type="text" name="lastname" required><br> <br>
+ Phone (xxx-xxx-xxxx): *<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> Email: *<input type="email" name="email" required><br> <br>
+ Street Address: <input type="text" name="street" required> City: 
+ <input type="text" name="city" required><br> <br>
+ State: <input type="text" name="state" required> Zip Code: <input type="number" name="zipcode" required>
+
+<h3> Education</h3>
+ Highschool Name: *<input type="text" name="highschool"> Graduation Year: *<input type="date" name="hsgradyear"><br><br>
+
+ Undergraduate College/University Name: <input type="text" name="ucollege"> Graduation Year: <input type="date" name="ugradyear"> Major: <input type="text" name="umajor"><br><br>  
+
+<h3> Related Work Experience</h3>
+ Employer Name :<input type="text" name="employer"> Position: <input type="text" name="position"> Number of years: <select name="positionyear">
+         <option value="">---</option>
+         <option value="lessthan1">less than 1</option>
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="morethan2">more than 2</option>
+        </select> <br><br>
+ 
+
+ Technical Skills (Check all that apply): <input type="checkbox" name="techskills" value="HTML"> HTML <input type="checkbox" name="techskills" value="JavaScripts"> JavaScript <input type="checkbox" name="techskills" value="CSS">CSS <input type="checkbox" name="techskills" value="PHP">PHP<br> <br>
+
+ Supplemental Question:<br>
+ In no more than 500 words, explain what makes you think you are qualified for this job. <br>
+     <textarea name="qualification"> </textarea><br><br>
+
+
+ Gender: <input type="radio" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female"> Female <input type="radio" name="gender" value="other"> Other<br><br>
+ Date(ddmmyyyy):<br>
+ *<input type="date" name="date"> <br> <br>
+
+ Confirmation:<br>
+ By checking the following box you cinfirm that all the information provided is correct?. <br>
+     *<input type="checkbox" name="yes" value="yes" required> Yes
+ <!--Submit Form Button-->
+ <h3> Submit Your Application
+ <input type="submit" name="submit" value="Submit"> 
+ </h3>
+ <!--Reset Form Button-->
+ <h3> Reset Your Application 
+ <input type="reset" name ="reset" value="Reset"> </h3>
+
+</form>
+</body>
+</html>

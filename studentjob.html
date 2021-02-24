@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Auther" content="Amica Sharma">
+        <title>amica-project</title>
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="mystyle.css">
+        <script src="myscript.js" type="text/javascript"></script>
+    </head>
+    <header>
+        <a href="http://ccse.kennesaw.edu/it" target="blank">
+        <img src="img/ksu_logo.png" alt="KSU Logo"></a>
+        <h1>Center for Applied Research in Information Technology</h1>
+    </header>
+
+<body>
+    <!--Nevigation bar-->    
+    <div class="navbar">
+        <a href="index.html">Home</a> 
+		<a href="faculty.html">Faculty</a> 
+		<a href="resources.html">Resources</a> 
+		<a class="active" href="studentjob.html">Internships</a>
+    </div>
+<!--main content begains-->	
+<h1>Student Assistantship Eligibility</h1>
+<hr>
+<div id="contents">
+    <p>KSU Students, are you looking for a summer job? CARIT has four student assistant positions open for undergraduate and graduate students. You may be eligible for this job if you have completed a certain number of courses with the minimum GPA given below.</p>
+    <hr>
+    <h2>Check Your Eligibility</h2>
+    <p>Please select the status and your grade from each of the courses to determine your eligibility for this position. </p>
+    <hr> 
+    <p>
+        <select name="select_classes" id="status" onChange="myFunction()">
+            <option value="novalue">Select your status</option>
+            <option value="undergrad">Undergraduate</option>
+            <option value="graduate">Graduate</option>
+        </select>
+    </p>
+<!--Error Message-->
+<div id="ErrorMessage"></div>
+<!-- Undergraduate Courses-->
+    <div id="undergraduatecourses">
+        <p>
+            <h3>Select the course grades for each of the following courses to evaluate your eligibility for the job.</h3>
+            <form id="ucourse1">
+                Course: CSE 3203 Mobile System Overview<br>
+                Select your letter grade:
+                <input type="radio" id="ucourse1_grade_A" name="ucourse1" value="A" >A </input>
+                <input type="radio" id="ucourse1_grade_B" name="ucourse1" value="B" >B </input>
+                <input type="radio" id="ucourse1_grade_C" name="ucourse1" value="C" >C </input>
+                <input type="radio" id="ucourse1_grade_D" name="ucourse1" value="D" >D </input>
+                <input type="radio" id="ucourse1_grade_F" name="ucourse1" value="F" >F</input>
+            </form>
+            <form>
+                Course: IT 4213 Mobile Web Development <br>
+                Select your letter grade:
+                <input type="radio" id="ucourse2_grade_A" name="ucourse2" value="A" >A </input>
+                <input type="radio" id="ucourse2_grade_B" name="ucourse2" value="B" >B </input>
+                <input type="radio" id="ucourse2_grade_C" name="ucourse2" value="C" >C </input>
+                <input type="radio" id="ucourse2_grade_D" name="ucourse2" value="D" >D </input>
+                <input type="radio" id="ucourse2_grade_F" name="ucourse2" value="F" >F</input>
+            </form>
+            <form>
+                Course: CSE 3153 Database Systems <br>
+                Select your letter grade:
+                <input type="radio" id="ucourse3_grade_A" name="ucourse3" value="A" >A </input>
+                <input type="radio" id="ucourse3_grade_B" name="ucourse3" value="B" >B </input>
+                <input type="radio" id="ucourse3_grade_C" name="ucourse3" value="C" >C </input>
+                <input type="radio" id="ucourse3_grade_D" name="ucourse3" value="D" >D </input>
+                <input type="radio" id="ucourse3_grade_F" name="ucourse3" value="F" >F </input>
+            </form>
+            <form>
+                Course: IT 4323 Data Communications & Networks <br>
+                Select your letter grade:
+                <input type="radio" id="ucourse4_grade_A" name="ucourse4" value="A" >A </input>
+                <input type="radio" id="ucourse4_grade_B" name="ucourse4" value="B" >B </input>
+                <input type="radio" id="ucourse4_grade_C" name="ucourse4" value="C" >C </input>
+                <input type="radio" id="ucourse4_grade_D" name="ucourse4" value="D" >D </input>
+                <input type="radio" id="ucourse4_grade_F" name="ucourse4" value="F" >F </input>
+            </form>
+        </p>		
+        <p> <button onclick = "undergraduate_eligibility()">Check Eligibility</button>
+            <button onclick="ureset()">Reset Grades</button>
+        </p>
+        <!--Eligibility Message Area-->
+        <div id="uEligibilityMessage">
+            <p id= "undergraduate-gpa"></p>
+            <p id= "undergraduate_eligibility"></p>
+        </div>			
+    </div>
+    <!-- Graduate Courses-->
+    <div id="graduatecourses">
+        <p>
+            <h3>Select the course grades for each of the following courses to evaluate your eligibility for the job.</h3>
+            <form>
+                Course: IT 7113 Data Visualization <br>
+                Select your letter grade:
+                <input type="radio" id="course1_grade_A" name="gcourse1" value="A" >A 
+                <input type="radio" id="course1_grade_B" name="gcourse1" value="B" >B 
+                <input type="radio" id="course1_grade_C" name="gcourse1" value="C" >C 
+                <input type="radio" id="course1_grade_D" name="gcourse1" value="D" >D 
+                <input type="radio" id="course1_grade_F" name="gcourse1" value="F" >F
+            </form>
+           
+            <form>
+                Course: IT 6713 Business Intelligence <br>
+                Select your letter grade:
+                <input type="radio" id="course2_grade_A" name="gcourse2" value="A" >A 
+                <input type="radio" id="course2_grade_B" name="gcourse2" value="B" >B 
+                <input type="radio" id="course2_grade_C" name="gcourse2" value="C" >C 
+                <input type="radio" id="course2_grade_D" name="gcourse2" value="D" >D 
+                <input type="radio" id="course2_grade_F" name="gcourse2" value="F" >F
+            </form>
+            <form>
+                Course: IT 6203 IT Design Studio <br>
+                Select your letter grade:
+                <input type="radio" id="course3_grade_A" name="gcourse3" value="A" >A 
+                <input type="radio" id="course3_grade_B" name="gcourse3" value="B" >B 
+                <input type="radio" id="course3_grade_C" name="gcourse3" value="C" >C 
+                <input type="radio" id="course3_grade_D" name="gcourse3" value="D" >D 
+                <input type="radio" id="course3_grade_F" name="gcourse3" value="F" >F
+            </form>
+            <form>
+                Course: IT 5443 Web Development <br>
+                Select your letter grade:
+                <input type="radio" id="course4_grade_A" name="gcourse4" value="A" >A 
+                <input type="radio" id="course4_grade_B" name="gcourse4" value="B" >B 
+                <input type="radio" id="course4_grade_C" name="gcourse4" value="C" >C 
+                <input type="radio" id="course4_grade_D" name="gcourse4" value="D" >D 
+                <input type="radio" id="course4_grade_F" name="gcourse4" value="F" >F
+            </form>	
+        </p>		
+        <p> <button onclick = "grad_eligibility()">Check Eligibility</button>
+            <button onclick="greset()">Reset Grades</button>
+        </p>
+        <!--Eligibility Message Area-->
+        <div id="gEligibilityMessage">
+            <p id= "grad-gpa"></p>
+            <p id= "grad_eligibility"></p>
+        </div>	
+                    
+    </div>
+   <br>
+    <br> 
+</div>
+      
+</body>
+<hr>
+<!--Footer begins-->
+<div id="footer">
+<h4><p>This website is a class project for Kennesaw State University, Web Development, Spring 2019  by Ambika Lohani Sharma (Amica).</p><a href="http://it5443.azurewebsites.net" target="_blank">
+<p>Class Project Website</p></h4>
+</div> 
+</html>    

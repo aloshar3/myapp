@@ -99,7 +99,7 @@ function Ueligibility() {
     document.getElementById("undergraduate-gpa").innerHTML="Your average gpa is "+average_ugpa+".";
 
     if(average_ugpa>3.2){
-        document.getElementById("undergraduate_eligibility").innerHTML='Congratulations! You are eligible to apply for this job. Click <a href="./ApplicationForm.html"><b>Here</b> </a> to go to the application page.'
+        document.getElementById("undergraduate_eligibility").innerHTML='Congratulations! You are eligible to apply for this job. Click <a href="stdJobApForm.html"><b>Here</b> </a> to go to the application page.'
     }
     else{
         document.getElementById("undergraduate_eligibility").innerHTML="Thank you for your interest. At this time you are not eligible to apply for this job."
@@ -156,7 +156,7 @@ function Geligibility() {
     document.getElementById("grad-gpa").innerHTML="Your average gpa is "+average_grad_gpa+".";
 
     if(average_grad_gpa>3.7){
-        document.getElementById("grad_eligibility").innerHTML='Congratulations! You are eligible to apply for this job. Click <a href="./ApplicationForm.html"><b>Here</b> </a> to go to the application page.'}
+        document.getElementById("grad_eligibility").innerHTML='Congratulations! You are eligible to apply for this job. Click <a href="stdJobApForm.html"><b>Here</b> </a> to go to the application page.'}
     else{
             document.getElementById("grad_eligibility").innerHTML="Thank you for your interest. At this time you are not eligible to apply for this job."
     }

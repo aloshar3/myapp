@@ -56,18 +56,20 @@ form{
 	
 }	
 .active {
-  background-color: #48ad4b; 
+  background-color: #48ad4b;
+  padding: 7px 7px; 
 }
 
 .navbar a:visited {color: rgb(63, 60, 60);}
-.navbar a:link {color: white;}
+.navbar a:link {color: white;
+  text-decoration: none;
+}
 .navbar a:hover {
   background-color: rgb(102, 82, 82);
-  padding: 7px 3px;
+  padding: 7px 7px;
   color: white;
 
 }
-.navbar a:link {text-decoration: none;}
 
 header {		
 	width: 100%;

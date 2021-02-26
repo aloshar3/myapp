@@ -57,16 +57,16 @@ form{
 }	
 .active {
   background-color: #48ad4b;
-  padding: 7px 7px; 
+  padding: 7px ;
 }
 
-.navbar a:visited {color: rgb(63, 60, 60);}
+.navbar a:visited {color: whitesmoke;}
 .navbar a:link {color: white;
   text-decoration: none;
 }
 .navbar a:hover {
   background-color: rgb(102, 82, 82);
-  padding: 7px 7px;
+  padding: 7px;
   color: white;
 
 }
